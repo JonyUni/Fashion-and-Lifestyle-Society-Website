@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Open_Sans, Bebas_Neue } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 
@@ -15,6 +16,26 @@ const bebasNeue = Bebas_Neue({
   variable: '--font-bebas-neue',
 })
 
+const didot = localFont({
+  src: '../public/fonts/Didot.otf',
+  variable: '--font-didot',
+  display: 'swap',
+})
+
+const helveticaLight = localFont({
+  src: '../public/fonts/helvetica-light-587ebe5a59211.ttf',
+  variable: '--font-helvetica-light',
+  display: 'swap',
+})
+
+const helveticaBold = localFont({
+  src: '../public/fonts/Helvetica.ttf',
+  variable: '--font-helvetica-bold',
+  display: 'swap',
+})
+
+
+
 export const metadata: Metadata = {
   title: 'Fashion & Lifestyle Society',
   description: 'Welcome to the Fashion and Lifestyle Society website',
@@ -27,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${bebasNeue.variable}`}>
+      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${helveticaLight.variable} ${helveticaBold.variable}`}>
         <Navigation />
         <main className="min-h-screen">
           {children}
