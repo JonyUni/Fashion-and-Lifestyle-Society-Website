@@ -22,24 +22,24 @@ export default function Navigation() {
           <div className="flex justify-start items-center leading-none">
             <Link href="/" className="text-white text-5xl font-normal " style={{ fontFamily: 'var(--font-didot)' }}>
               F&LS
-            </Link>
-          </div>
+              </Link>
+            </div>
 
           {/* Navigation Links */}
           <div className="w-[554px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-between items-center">
-            {navLinks.map((link) => {
-              const isActive = pathname === link.href
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
                   className="text-white text-2xl font-light transform translate-y-[2px]"
                   style={{ fontFamily: 'var(--font-helvetica-light)' }}
-                >
-                  {link.label}
-                </Link>
-              )
-            })}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
             
             {/* Icon */}
             <div className="flex justify-start items-center gap-5">
