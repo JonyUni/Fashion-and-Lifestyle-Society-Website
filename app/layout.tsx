@@ -29,7 +29,7 @@ const helveticaLight = localFont({
 })
 
 const helveticaBold = localFont({
-  src: '../public/fonts/Helvetica.ttf',
+  src: '../public/fonts/Helvetica-Bold.ttf',
   variable: '--font-helvetica-bold',
   display: 'swap',
 })
