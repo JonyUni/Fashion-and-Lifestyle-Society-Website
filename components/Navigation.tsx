@@ -23,8 +23,8 @@ export default function Navigation() {
           <div className="flex justify-start items-baseline leading-none">
             <Link href="/" className="text-white text-3xl font-didot leading-none">
               F&LS
-            </Link>
-          </div>
+              </Link>
+            </div>
 
           {/* Navigation Links */}
           <div className="w-[554px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] flex justify-between items-center">

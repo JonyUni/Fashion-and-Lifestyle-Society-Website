@@ -33,6 +33,11 @@ const helveticaBold = localFont({
   variable: '--font-helvetica-bold',
   display: 'swap',
 })
+const helveticaBoldOblique = localFont({
+  src: '../public/fonts/Helvetica-BoldOblique.ttf',
+  variable: '--font-helvetica-bold-oblique',
+  display: 'swap',
+})
 
 
 
@@ -48,7 +53,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${helveticaLight.variable} ${helveticaBold.variable}`}>
+      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${helveticaLight.variable} ${helveticaBold.variable} ${helveticaBoldOblique.variable}`}>
         <Navigation />
         <main className="min-h-screen">
           {children}
