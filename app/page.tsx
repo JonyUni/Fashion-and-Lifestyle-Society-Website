@@ -241,15 +241,15 @@ export default function Home() {
               { src: '/images/landing/6.jpg', className: 'left-[42%] top-[30%] w-[22%]' },
               { src: '/images/landing/7.jpg', className: 'left-[68%] top-[34%] w-[24%]' },
               { src: '/images/landing/8.jpg', className: 'left-[4%] top-[68%] w-[24%]' },
-              { src: '/images/landing/9.jpg', className: 'left-[26%] top-[58%] w-[30%]' },
+              { src: '/images/landing/9.JPG', className: 'left-[26%] top-[58%] w-[30%]' },
               { src: '/images/landing/10.jpg', className: 'left-[60%] top-[60%] w-[22%]' },
-              { src: '/images/landing/11.jpg', className: 'left-[8%] top-[80%] w-[26%]' },
-              { src: '/images/landing/12.jpg', className: 'left-[0%] top-[25%] w-[22%]' },
-              { src: '/images/landing/13.jpg', className: 'left-[75%] top-[55%] w-[24%]' },
-              { src: '/images/landing/14.jpg', className: 'left-[82%] top-[85%] w-[24%]' },
-              { src: '/images/landing/15.jpg', className: 'left-[10%] top-[10%] w-[24%]' },
-              { src: '/images/landing/16.jpg', className: 'left-[25%] top-[45%] w-[24%]' },
-              { src: '/images/landing/17.jpg', className: 'left-[50%] top-[50%] w-[24%]' },
+              { src: '/images/landing/11.JPG', className: 'left-[8%] top-[80%] w-[26%]' },
+              { src: '/images/landing/12.JPG', className: 'left-[0%] top-[25%] w-[22%]' },
+              { src: '/images/landing/13.JPG', className: 'left-[75%] top-[55%] w-[24%]' },
+              { src: '/images/landing/14.JPG', className: 'left-[82%] top-[85%] w-[24%]' },
+              { src: '/images/landing/15.JPG', className: 'left-[10%] top-[10%] w-[24%]' },
+              { src: '/images/landing/16.JPG', className: 'left-[25%] top-[45%] w-[24%]' },
+              { src: '/images/landing/17.JPG', className: 'left-[50%] top-[50%] w-[24%]' },
             ].map(({ src, className }) => (
               <div
                 key={src}
