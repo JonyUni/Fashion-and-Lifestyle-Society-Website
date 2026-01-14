@@ -22,6 +22,12 @@ const didot = localFont({
   display: 'swap',
 })
 
+const didotTitle = localFont({
+  src: '../public/fonts/Didot Title.otf',
+  variable: '--font-didot-title',
+  display: 'swap',
+})
+
 const helveticaLight = localFont({
   src: '../public/fonts/helvetica-light-587ebe5a59211.ttf',
   variable: '--font-helvetica-light',
@@ -53,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${helveticaLight.variable} ${helveticaBold.variable} ${helveticaBoldOblique.variable}`}>
+      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${didotTitle.variable} ${helveticaLight.variable} ${helveticaBold.variable} ${helveticaBoldOblique.variable}`}>
         <Navigation />
         <main className="min-h-screen">
           {children}
