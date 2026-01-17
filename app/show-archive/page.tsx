@@ -12,9 +12,16 @@ export default function Show() {
   const collections: Collection[] = [
     {
       image: '/images/show/haus_of_horror.png',
+      title: 'REVELATIONS',
+      season: 'FW 2025',
+      href: '/show-archive/revelations',
+      alt: 'Revelations collection',
+    },
+    {
+      image: '/images/show/haus_of_horror.png',
       title: 'HAUS OF HORROR',
       season: 'FW 2025',
-      href: '/show-archive/haus-of-horror',
+      href: '/show-archive/show-pages',
       alt: 'Haus of Horror collection',
     },
     {
@@ -23,13 +30,6 @@ export default function Show() {
       season: 'SS 2024',
       href: '/show-archive/collection-2',
       alt: 'Collection 2',
-    },
-    {
-      image: '/images/show/haus_of_horror.png',
-      title: 'COLLECTION 3',
-      season: 'FW 2024',
-      href: '/show-archive/collection-3',
-      alt: 'Collection 3',
     },
   ]
 
