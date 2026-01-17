@@ -19,13 +19,13 @@ const runwayImages = [
 export default function HausOfHorror() {
   return (
     <div className="bg-black min-h-screen relative">
-      <div className="px-8 lg:px-16 xl:px-40 pt-[2rem] pb-16">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-16 xl:px-40 pt-[2rem] pb-16">
         {/* Header Section */}
-        <div className="relative mb-[5rem] flex flex-col items-center">
+        <div className="relative mb-8 sm:mb-12 md:mb-16 lg:mb-[5rem] flex flex-col items-center">
           {/* Season - top right */}
           <div className="flex flex-col items-center">
             <p 
-              className="text-white text-[1rem] font-bold" 
+              className="text-white text-sm sm:text-base md:text-lg lg:text-[1rem] font-bold" 
               style={{ fontFamily: 'var(--font-helvetica-bold)' }}
             >
               FALL/WINTER 2025
@@ -33,9 +33,9 @@ export default function HausOfHorror() {
           </div>
           
           {/* Title - centered and stacked */}
-          <div className="flex flex-col items-center pt-[1.5rem]">
+          <div className="flex flex-col items-center pt-4 sm:pt-6 md:pt-8 lg:pt-[1.5rem] w-full px-4">
             <h1 
-              className="text-white text-[7rem] font-normal leading-[116px] text-center" 
+              className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[7rem] font-normal leading-tight sm:leading-[1.2] md:leading-[1.3] lg:leading-[116px] text-center" 
               style={{ fontFamily: 'var(--font-didot-title)' }}
             >
               <span className="block">HAUS OF</span>
@@ -44,7 +44,7 @@ export default function HausOfHorror() {
             
             {/* Byline - centered below title */}
             <p 
-              className="text-white text-[1.25rem] italic text-center" 
+              className="text-white text-sm sm:text-base md:text-lg lg:text-[1.25rem] italic text-center mt-2 sm:mt-3 md:mt-4" 
               style={{ fontFamily: 'var(--font-didot-italic)' }}
             >
               by Anthony Lam and Anthony Lam
@@ -52,11 +52,11 @@ export default function HausOfHorror() {
           </div>
           
           {/* Divider Line - centered */}
-          <div className="mt-[2.5rem] h-px w-full max-w-[85.0625rem] bg-white mx-auto"></div>
+          <div className="mt-6 sm:mt-8 md:mt-12 lg:mt-[2.5rem] h-px w-full max-w-[85.0625rem] bg-white mx-auto"></div>
         </div>
 
         {/* Runway Images Grid - 3 columns matching Figma layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
           {runwayImages.map((src, index) => (
             <div key={index} className="relative w-full aspect-[440/661]">
               <Image
