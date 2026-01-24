@@ -3,18 +3,9 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import ArticleCard from '@/components/ArticleCard'
+import { getArticlesForVolta } from '@/lib/articles'
 
 type Category = 'CULTURE' | 'FASHION' | 'BEAUTY' | 'MUSIC' | 'ZINE'
-
-interface Article {
-  id: number
-  image: string
-  category: 'BEAUTY' | 'CULTURE' | 'FASHION' | 'MUSIC' | 'ZINE'
-  title: string
-  author: string
-  href?: string
-  alt: string
-}
 
 // Category icon mapping
 const categoryIcons: Record<Category, { image: string; hoverImage?: string; label: string; alt: string }> = {
@@ -50,56 +41,8 @@ const categoryIcons: Record<Category, { image: string; hoverImage?: string; labe
   },
 }
 
-const articles: Article[] = [
-  {
-    id: 1,
-    image: '/images/volta/article-1.png',
-    category: 'CULTURE',
-    title: 'What is the best in the city of st. catharines',
-    author: 'Anthony Lam',
-    alt: 'Article about St. Catharines',
-  },
-  {
-    id: 2,
-    image: '/images/volta/article-2.png',
-    category: 'CULTURE',
-    title: 'Best bars in the city',
-    author: 'Anthony Lam',
-    alt: 'Best bars article',
-  },
-  {
-    id: 3,
-    image: '/images/volta/article-3.png',
-    category: 'MUSIC',
-    title: 'Best bars in the city',
-    author: 'Anthony Lam',
-    alt: 'Music article',
-  },
-  {
-    id: 4,
-    image: '/images/volta/article-4.png',
-    category: 'BEAUTY',
-    title: 'Best bars in the city',
-    author: 'Anthony Lam',
-    alt: 'Beauty article',
-  },
-  {
-    id: 5,
-    image: '/images/volta/article-5.png',
-    category: 'FASHION',
-    title: 'Best bars in the city',
-    author: 'Anthony Lam',
-    alt: 'Fashion article',
-  },
-  {
-    id: 6,
-    image: '/images/volta/article-6.png',
-    category: 'CULTURE',
-    title: 'Best bars in the city',
-    author: 'Anthony Lam',
-    alt: 'Culture article',
-  },
-]
+// Get articles from centralized data source
+const articles = getArticlesForVolta()
 
 const categories: Category[] = ['CULTURE', 'FASHION', 'BEAUTY', 'MUSIC', 'ZINE']
 

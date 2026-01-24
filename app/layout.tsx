@@ -58,6 +58,11 @@ const helveticaCompressed = localFont({
   display: 'swap',
 })
 
+const helveticaOblique = localFont({
+  src: '../public/fonts/Helvetica-Oblique.ttf',
+  variable: '--font-helvetica-oblique',
+  display: 'swap',
+})
 
 
 export const metadata: Metadata = {
@@ -72,7 +77,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${didotTitle.variable} ${didotItalic.variable} ${helveticaLight.variable} ${helveticaBold.variable} ${helveticaBoldOblique.variable} ${helveticaCompressed.variable}`}>
+      <body className={`${openSans.variable} ${bebasNeue.variable} ${didot.variable} ${didotTitle.variable} ${didotItalic.variable} ${helveticaLight.variable} ${helveticaBold.variable} ${helveticaBoldOblique.variable} ${helveticaCompressed.variable} ${helveticaOblique.variable}`}>
         <Navigation />
         <main className="min-h-screen">
           {children}
