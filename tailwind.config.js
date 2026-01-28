@@ -15,7 +15,7 @@ module.exports = {
   				'serif'
   			],
   			helveticaLight: [
-  				'HelveticaLightLocal',
+  				'var(--font-helvetica-light)',
   				'Helvetica',
   				'Arial',
   				'sans-serif'
