@@ -11,7 +11,7 @@ interface Collection {
 export default function Show() {
   const collections: Collection[] = [
     {
-      image: '/images/show/haus_of_horror.png',
+      image: '/images/show/revelations/cover-relevations.JPG',
       title: 'REVELATIONS',
       season: 'FW 2025',
       href: '/show-archive/revelations',
@@ -25,11 +25,11 @@ export default function Show() {
       alt: 'Haus of Horror collection',
     },
     {
-      image: '/images/show/haus_of_horror.png',
-      title: 'COLLECTION 2',
+      image: '/images/show/pangea/IMG_9371.jpeg',
+      title: 'PANGEA',
       season: 'SS 2024',
-      href: '/show-archive/collection-2',
-      alt: 'Collection 2',
+      href: '/show-archive/pangea',
+      alt: 'Pangea collection',
     },
   ]
 
